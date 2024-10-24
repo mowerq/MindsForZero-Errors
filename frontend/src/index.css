@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
