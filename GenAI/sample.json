@@ -1,0 +1,27 @@
+{
+  "test": {
+    "id": "math_exam_2024",
+    "questions": [
+      {
+        "question_id": "1",
+        "question_root": "What is the result of 2 + 2?",
+        "options": ["3", "4", "5", "6"],
+        "correct_answer": "4",
+        "question_label": ""
+      }
+    ]
+  },
+  "students": [
+    {
+      "student_id": "1",
+      "name": "John Doe",
+      "responses": [
+        {
+          "selected_option": "4",
+          "is_correct": false
+        }
+      ],
+      "study_suggestion": ""
+    }
+  ]
+}
