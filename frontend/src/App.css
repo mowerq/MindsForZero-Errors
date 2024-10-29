@@ -136,10 +136,13 @@
   #greeting-content {
     flex-direction: column;
     text-align: center;
-    gap: 0;
+    gap: 24px;
+    justify-content: space-between;
+    min-height: fit-content;
   }
   #greeting {
-    height: 100dvh;
+    min-height: min-content !important;
+    padding-bottom: 24px;
   }
   #greeting-header {
     height: 10%;
