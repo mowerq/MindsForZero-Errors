@@ -13,4 +13,7 @@ export const enApp = {
     },
     features: "FEATURES",
   },
+  footer: {
+    footerText: "All rights reserved. MindsForZero Errors Team 2024",
+  },
 };

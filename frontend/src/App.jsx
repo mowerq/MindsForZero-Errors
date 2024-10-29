@@ -10,6 +10,8 @@ import {
   getSystemLanguage,
 } from "./utils/translation/LanguageUtils";
 import SidebarMenu from "./components/sidebarmenu/SidebarMenu";
+import Footer from "./components/footer/Footer";
+import geminiLogo from "./assets/gemini_logo.png";
 
 function App() {
   const [currentTab, setCurrentTab] = useState(0);
@@ -105,7 +107,9 @@ function App() {
       <div id="landingpage-other-content">
         <h1 className="landingpage-h1">{t("landingPage.features")}</h1>
         <div id="landingpage-features">
-          <div className="landingpage-feature"></div>
+          <div className="landingpage-feature">
+            <img src={geminiLogo} alt="" className="landingpage-feature-img" />
+          </div>
           <div className="landingpage-feature"></div>
           <div className="landingpage-feature"></div>
           <div className="landingpage-feature"></div>
@@ -113,6 +117,7 @@ function App() {
           <div className="landingpage-feature"></div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

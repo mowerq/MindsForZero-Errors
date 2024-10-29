@@ -13,4 +13,7 @@ export const trApp = {
     },
     features: "ÖZELLİKLER",
   },
+  footer: {
+    footerText: "Bütün hakları saklıdır. MindsForZero Errors Takımı 2024",
+  },
 };

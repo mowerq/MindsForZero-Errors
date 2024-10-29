@@ -112,6 +112,11 @@
   border-radius: 24px;
   width: 360px;
   height: 180px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.landingpage-feature-img {
+  width: 100%;
+  height: 100%;
 }
 .menu-icon {
   font-size: 1.5rem;
@@ -156,6 +161,9 @@
   }
   #greeting-header {
     gap: 0;
+  }
+  #landingpage-features {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
   .landingpage-feature {
     width: 50%;
