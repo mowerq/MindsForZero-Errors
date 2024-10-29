@@ -154,4 +154,7 @@
   #greeting-header {
     gap: 0;
   }
+  .landingpage-feature {
+    width: 50%;
+  }
 }
