@@ -1,12 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "primeicons/primeicons.css";
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-html, body {
+html,
+body {
   font-size: 14px;
 }
 
-button {
+button,
+a {
   cursor: pointer;
+  background: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.15s ease;
+  font-size: 1rem;
+}
+
+a:active {
+  color: #5a5a5a;
+}
+
+img {
+  object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }

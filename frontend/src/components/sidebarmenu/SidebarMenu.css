@@ -1,0 +1,19 @@
+#sidebarmenu-navigation-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  height: 240px;
+  transition: 1s ease;
+  background-color: #faf8f7;
+  border-radius: 6px;
+}
+#sidebarmenu-navigation-links > * {
+  padding: 12px 0;
+}
+#sidebarmenu-navigation-links > *:hover {
+  background-color: #2e2e2c;
+  color: #faf8f7;
+}

@@ -1,0 +1,157 @@
+#logo-and-name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10%;
+}
+#greeting {
+  height: 600px;
+  background-image: url("./assets/landingPage_FirstPic.jpeg");
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: #2e2e2cb6;
+}
+#greeting-header {
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#sticky-header {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e3dfdef6;
+}
+#greeting-content {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 15%;
+  gap: 100px;
+  color: #faf8f7;
+  font-size: 1.4rem;
+  line-break: loose;
+}
+#greeting-img {
+  width: 360px;
+}
+#greeting-texts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  max-height: 400px;
+  max-width: 400px;
+  text-overflow: ellipsis;
+}
+
+#landing-page {
+  background-color: #e3dfde;
+  min-height: 100vh;
+  position: relative;
+}
+.header-img {
+  width: auto;
+  max-height: 50%;
+}
+#header-navigation-links {
+  display: flex;
+  gap: 24px;
+}
+#header-navigation-links > * {
+  color: #959594;
+  font-weight: 900;
+}
+
+#landingpage-other-content {
+  padding: 60px 10% 0 10%;
+}
+.active-tab {
+  color: #faf8f7 !important;
+  border-bottom: 1px solid #faf8f7;
+}
+.inactive-tab:hover {
+  color: #faf8f7 !important;
+}
+#sticky-header-navigation-links {
+  display: flex;
+  gap: 24px;
+}
+#sticky-header-navigation-links > * {
+  color: #727270;
+  font-weight: 900;
+}
+.sticky-header-active-tab {
+  color: #2e2e2c !important;
+  border-bottom: 1px solid #2e2e2c;
+  transition: 0.15s ease;
+}
+.sticky-header-inactive-tab:hover {
+  color: #2e2e2c !important;
+}
+.landingpage-h1 {
+  font-size: 4rem;
+  padding-bottom: 60px;
+}
+.landingpage-h1::first-letter {
+  font-size: 8rem;
+}
+#landingpage-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  gap: 48px;
+}
+.landingpage-feature {
+  background-color: white;
+  padding: 24px;
+  border-radius: 24px;
+  width: 360px;
+  height: 180px;
+}
+.menu-icon {
+  font-size: 1.5rem;
+  color: #faf8f7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  #greeting-img {
+    width: 300px;
+  }
+  #greeting-header {
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #greeting-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  #greeting {
+    height: 100dvh;
+  }
+  #greeting-header {
+    height: 10%;
+    gap: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logo-and-name {
+    height: 60%;
+  }
+  #greeting-header {
+    gap: 0;
+  }
+}
