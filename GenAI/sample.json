@@ -4,11 +4,25 @@
     "questions": [
       {
         "question_id": "1",
+        "question_type": "multiple_choice",
         "question_root": "What is the result of 2 + 2?",
         "options": ["3", "4", "5", "6"],
         "correct_answer": "4",
         "question_label": ""
-      }
+      },
+      {
+       "question_id": "2",
+       "question_type": "multiple_choice",
+       "question_root": "What is the name of our star?",
+       "options": [
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Sun"
+       ],
+       "correct_answer": "Sun",
+       "question_label": ""
+       }
     ]
   },
   "students": [
@@ -17,7 +31,30 @@
       "name": "John Doe",
       "responses": [
         {
+          "question_id": "1",
+          "selected_option": "3",
+          "is_correct": false
+        },
+        {
+          "question_id": "2",
+          "selected_option": "Earth",
+          "is_correct": false
+        }
+      ],
+      "study_suggestion": ""
+    },
+    {
+      "student_id": "2",
+      "name": "Mary Smith",
+      "responses": [
+        {
+          "question_id": "1",
           "selected_option": "4",
+          "is_correct": false
+        },
+        {
+          "question_id": "2",
+          "selected_option": "Earth",
           "is_correct": false
         }
       ],
