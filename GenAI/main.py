@@ -56,7 +56,8 @@ for student in data['students']:
     print("suggestions: " + 55*"-")
 
     print("Suggest a study topic based on the following question labels: " + ', '.join(wrong_labels))
-    suggestion_AI = model.generate_content("Suggest a one-sentence study recommendation for an elementary school child who is making mistakes in the following subjects: " + ', '.join(wrong_labels))
+    suggestion_AI = model.generate_content("Suggest a one-sentence study recommendation for an elementary "
+                                           "school child who is making mistakes in the following subjects: " + ', '.join(wrong_labels))
     print(suggestion_AI.text)
     student['study_suggestion'] = suggestion_AI.text
 
