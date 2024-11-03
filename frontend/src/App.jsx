@@ -32,7 +32,11 @@ function App() {
 
   return (
     <div id="landing-page">
-      <Header scrollY={600} />
+      <Header
+        scrollY={600}
+        currentTab={currentTab}
+        setCurrentTab={setCurrentTab}
+      />
       <div id="greeting">
         <header id="greeting-header">
           <div id="logo-and-name">
@@ -105,17 +109,149 @@ function App() {
         </div>
       </div>
       <div id="landingpage-other-content">
-        <h1 className="landingpage-h1">{t("landingPage.features")}</h1>
-        <div id="landingpage-features">
-          <div className="landingpage-feature">
-            <img src={geminiLogo} alt="" className="landingpage-feature-img" />
-          </div>
-          <div className="landingpage-feature"></div>
-          <div className="landingpage-feature"></div>
-          <div className="landingpage-feature"></div>
-          <div className="landingpage-feature"></div>
-          <div className="landingpage-feature"></div>
-        </div>
+        {currentTab === 0 && (
+          <>
+            <h1 className="landingpage-h1">{t("landingPage.features")}</h1>
+            <div id="landingpage-features">
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+              <div className="landingpage-feature">
+                <img
+                  src={geminiLogo}
+                  alt=""
+                  className="landingpage-feature-img"
+                />
+                <div className="landingpage-feature-content">
+                  <h2>Gemini AI</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, sapiente iste neque repellendus temporibus impedit
+                    voluptas quas ipsa dolor quo quos reprehenderit aliquid, ab
+                    itaque exercitationem debitis ex necessitatibus! Accusantium
+                    necessitatibus dolorem ullam, exercitationem mollitia animi.
+                    Esse autem dicta ducimus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+        {currentTab === 1 && (
+          <>
+            <h1 className="landingpage-h1">{t("header.aboutUs")}</h1>
+          </>
+        )}
+        {currentTab === 2 && (
+          <>
+            <h1 className="landingpage-h1">{t("header.contact")}</h1>
+          </>
+        )}
       </div>
       <Footer />
     </div>

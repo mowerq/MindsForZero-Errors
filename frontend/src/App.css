@@ -19,11 +19,13 @@
 }
 #sticky-header {
   height: 60px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   justify-content: space-around;
   align-items: center;
-  background-color: #e3dfdef6;
+  background-color: #e3dfdeed;
 }
 #greeting-content {
   height: 80%;
@@ -107,16 +109,30 @@
   gap: 48px;
 }
 .landingpage-feature {
-  background-color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: #2e2e2c;
   padding: 24px;
   border-radius: 24px;
   width: 360px;
   height: 180px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+.landingpage-feature-content {
+  width: 75%;
+  color: #faf8f7;
+}
 .landingpage-feature-img {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #faf8f7;
+  transition: 1.2s ease;
+}
+.landingpage-feature:hover img {
+  right: -75%;
 }
 .menu-icon {
   font-size: 1.5rem;
